@@ -10,13 +10,43 @@
 		043CDA6621D70AC900196C07 /* libitunesdb2.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043CDA6521D70AC900196C07 /* libitunesdb2.hpp */; };
 		043CDA6821D70AC900196C07 /* libitunesdb2Priv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043CDA6721D70AC900196C07 /* libitunesdb2Priv.hpp */; };
 		043CDA6A21D70AC900196C07 /* libitunesdb2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 043CDA6921D70AC900196C07 /* libitunesdb2.cpp */; };
+		043CDA7C21D742E900196C07 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 043CDA7B21D742E900196C07 /* main.cpp */; };
+		043CDA8121D7430500196C07 /* libitunesdb2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043CDA6221D70AC900196C07 /* libitunesdb2.a */; };
+		043CDA8921D873AF00196C07 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 043CDA8821D873AF00196C07 /* main.mm */; };
+		043CDA8D21D873D100196C07 /* libitunesdb2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043CDA6221D70AC900196C07 /* libitunesdb2.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		043CDA7721D742E900196C07 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		043CDA8421D873AF00196C07 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		043CDA6221D70AC900196C07 /* liblibitunesdb2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibitunesdb2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		043CDA6221D70AC900196C07 /* libitunesdb2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libitunesdb2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		043CDA6521D70AC900196C07 /* libitunesdb2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = libitunesdb2.hpp; sourceTree = "<group>"; };
 		043CDA6721D70AC900196C07 /* libitunesdb2Priv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = libitunesdb2Priv.hpp; sourceTree = "<group>"; };
 		043CDA6921D70AC900196C07 /* libitunesdb2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = libitunesdb2.cpp; sourceTree = "<group>"; };
+		043CDA7921D742E900196C07 /* libitunesdb2-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "libitunesdb2-test"; sourceTree = BUILT_PRODUCTS_DIR; };
+		043CDA7B21D742E900196C07 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		043CDA8621D873AF00196C07 /* itunesdb2plist */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = itunesdb2plist; sourceTree = BUILT_PRODUCTS_DIR; };
+		043CDA8821D873AF00196C07 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		043CDA8E21D87FB000196C07 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,21 +57,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		043CDA7621D742E900196C07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043CDA8121D7430500196C07 /* libitunesdb2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043CDA8321D873AF00196C07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043CDA8D21D873D100196C07 /* libitunesdb2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		043CDA5921D70AC900196C07 = {
 			isa = PBXGroup;
 			children = (
+				043CDA8E21D87FB000196C07 /* README.md */,
 				043CDA6421D70AC900196C07 /* libitunesdb2 */,
+				043CDA7A21D742E900196C07 /* libitunesdb2-test */,
+				043CDA8721D873AF00196C07 /* itunesdb2plist */,
 				043CDA6321D70AC900196C07 /* Products */,
+				043CDA8021D7430500196C07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		043CDA6321D70AC900196C07 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				043CDA6221D70AC900196C07 /* liblibitunesdb2.a */,
+				043CDA6221D70AC900196C07 /* libitunesdb2.a */,
+				043CDA7921D742E900196C07 /* libitunesdb2-test */,
+				043CDA8621D873AF00196C07 /* itunesdb2plist */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +106,29 @@
 				043CDA6921D70AC900196C07 /* libitunesdb2.cpp */,
 			);
 			path = libitunesdb2;
+			sourceTree = "<group>";
+		};
+		043CDA7A21D742E900196C07 /* libitunesdb2-test */ = {
+			isa = PBXGroup;
+			children = (
+				043CDA7B21D742E900196C07 /* main.cpp */,
+			);
+			path = "libitunesdb2-test";
+			sourceTree = "<group>";
+		};
+		043CDA8021D7430500196C07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		043CDA8721D873AF00196C07 /* itunesdb2plist */ = {
+			isa = PBXGroup;
+			children = (
+				043CDA8821D873AF00196C07 /* main.mm */,
+			);
+			path = itunesdb2plist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,8 +160,42 @@
 			);
 			name = libitunesdb2;
 			productName = libitunesdb2;
-			productReference = 043CDA6221D70AC900196C07 /* liblibitunesdb2.a */;
+			productReference = 043CDA6221D70AC900196C07 /* libitunesdb2.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		043CDA7821D742E900196C07 /* libitunesdb2-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043CDA7D21D742E900196C07 /* Build configuration list for PBXNativeTarget "libitunesdb2-test" */;
+			buildPhases = (
+				043CDA7521D742E900196C07 /* Sources */,
+				043CDA7621D742E900196C07 /* Frameworks */,
+				043CDA7721D742E900196C07 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libitunesdb2-test";
+			productName = "libitunesdb2-test";
+			productReference = 043CDA7921D742E900196C07 /* libitunesdb2-test */;
+			productType = "com.apple.product-type.tool";
+		};
+		043CDA8521D873AF00196C07 /* itunesdb2plist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043CDA8A21D873AF00196C07 /* Build configuration list for PBXNativeTarget "itunesdb2plist" */;
+			buildPhases = (
+				043CDA8221D873AF00196C07 /* Sources */,
+				043CDA8321D873AF00196C07 /* Frameworks */,
+				043CDA8421D873AF00196C07 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = itunesdb2plist;
+			productName = itunesdb2plist;
+			productReference = 043CDA8621D873AF00196C07 /* itunesdb2plist */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +207,12 @@
 				ORGANIZATIONNAME = MCJack123;
 				TargetAttributes = {
 					043CDA6121D70AC900196C07 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					043CDA7821D742E900196C07 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					043CDA8521D873AF00196C07 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -115,6 +230,8 @@
 			projectRoot = "";
 			targets = (
 				043CDA6121D70AC900196C07 /* libitunesdb2 */,
+				043CDA7821D742E900196C07 /* libitunesdb2-test */,
+				043CDA8521D873AF00196C07 /* itunesdb2plist */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +242,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				043CDA6A21D70AC900196C07 /* libitunesdb2.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043CDA7521D742E900196C07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043CDA7C21D742E900196C07 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043CDA8221D873AF00196C07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043CDA8921D873AF00196C07 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +380,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94H887LKV9;
-				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_PREFIX = "";
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,11 +393,47 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94H887LKV9;
-				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_PREFIX = "";
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		043CDA7E21D742E900196C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94H887LKV9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		043CDA7F21D742E900196C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94H887LKV9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		043CDA8B21D873AF00196C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94H887LKV9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		043CDA8C21D873AF00196C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94H887LKV9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -285,6 +454,24 @@
 			buildConfigurations = (
 				043CDA6E21D70AC900196C07 /* Debug */,
 				043CDA6F21D70AC900196C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043CDA7D21D742E900196C07 /* Build configuration list for PBXNativeTarget "libitunesdb2-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043CDA7E21D742E900196C07 /* Debug */,
+				043CDA7F21D742E900196C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043CDA8A21D873AF00196C07 /* Build configuration list for PBXNativeTarget "itunesdb2plist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043CDA8B21D873AF00196C07 /* Debug */,
+				043CDA8C21D873AF00196C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -4,10 +4,38 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>itunesdb2plist.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>libitunesdb2-test.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>libitunesdb2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>043CDA6121D70AC900196C07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>043CDA7821D742E900196C07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>043CDA8521D873AF00196C07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
