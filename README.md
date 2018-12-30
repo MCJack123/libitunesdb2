@@ -4,11 +4,11 @@ A successor to [libitunesdb](http://libitunesdb.sourceforge.net/) using C++ and 
 ## Compiling
 The compilation is already all set up in the Xcode project, but you can compile manually with:
 ```
-gcc -c -o libitunesdb2.o libitunesdb2/libitunesdb2.cpp
+g++ -std=c++11 -c -o libitunesdb2.o libitunesdb2/libitunesdb2.cpp
 ar rcs libitunesdb2.a libitunesdb2.o
-gcc -o libitunesdb2-test libitunesdb2-test/main.cpp -L. -litunesdb2
+g++ -std=c++11 -o libitunesdb2-test libitunesdb2-test/main.cpp -L. -litunesdb2
 # If not on macOS, skip this
-gcc -o itunesdb2plist itunesdb2plist/main.mm -L. -litunesdb2
+clang -o itunesdb2plist itunesdb2plist/main.mm -L. -litunesdb2 -framework Foundation
 ```
 
 ## Usage
